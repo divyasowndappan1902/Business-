@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stackly Group — premium business solutions and corporate services.">
+  <title>Stackly Group — Corporate Business Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-home">
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="Home">
+        <img class="logo__img" src="images/stackly-logo-new.webp" alt="Stackly" width="180" height="auto" decoding="async">
+      </a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-wrap" aria-label="Open menu" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') !== 'true');">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <div class="site-header__nav-wrap" id="nav-wrap">
+        <div class="site-header__nav-inner">
+          <nav class="site-header__nav" aria-label="Main navigation">
+            <ul class="nav-list">
+              <li><a class="nav-link active" href="index.html">Home</a></li>
+              <li><a class="nav-link" href="404.html">About</a></li>
+              <li><a class="nav-link" href="404.html">Services</a></li>
+              <li><a class="nav-link" href="404.html">Pricing</a></li>
+              <li><a class="nav-link" href="404.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="site-header__actions">
+            <a class="btn btn--nav-login" href="404.html">Login</a>
+            <a class="btn btn--primary" href="404.html">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <!-- Hero Section (Split Layout) -->
+    <section class="hero-premium" id="hero">
+      <div class="bg-shape bg-shape-1"></div>
+      <div class="bg-shape bg-shape-2"></div>
+      <canvas id="hero-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; opacity: 0.2; filter: invert(1);"></canvas>
+      <div class="container hero-premium__content split-hero" style="position: relative; z-index: 2;">
+        <div class="hero-premium__text">
+          <span class="hero-premium__kicker glass-badge">Corporate excellence 2026</span>
+          <h1 class="gradient-text">Strategic business services for ambitious enterprises</h1>
+          <p class="lead">We partner with leadership teams to unlock growth, streamline operations, and build resilient organizations—backed by data, experience, and UI-driven outcomes.</p>
+          <div class="hero-premium__actions">
+            <a class="btn btn--primary btn--glow" href="404.html">Schedule consultation</a>
+            <a class="btn btn--outline-light" href="404.html">Explore services</a>
+          </div>
+          <div class="hero-premium__stats-row">
+            <div class="hero-stat">
+              <strong>18+</strong>
+              <span>Years collective experience</span>
+            </div>
+            <div class="hero-stat">
+              <strong>500+</strong>
+              <span>Projects delivered</span>
+            </div>
+            <div class="hero-stat">
+              <strong>40+</strong>
+              <span>Industries served</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-premium__visual">
+          <img src="images/hero-ui.webp" alt="Dashboard UI" class="floating-ui">
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted By Marquee -->
+
+    <!-- Services Grid -->
+    <section class="section section--muted" id="services">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="section__kicker">What we do</p>
+          <h2 class="section__title">Business services built for modern corporations</h2>
+          <p class="section__lead">From board-level strategy to execution on the ground—comprehensive support across the functions that drive performance.</p>
+        </header>
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <article class="service-card glass-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Business consulting</h3>
+            <p>Operating models, transformation roadmaps, and stakeholder alignment for sustainable change.</p>
+            <a href="404.html" class="learn-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+          <!-- Service 2 -->
+          <article class="service-card glass-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </div>
+            <h3>Financial planning</h3>
+            <p>Capital structure, forecasting, and risk frameworks tailored to your growth stage.</p>
+            <a href="404.html" class="learn-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+          <!-- Service 3 -->
+          <article class="service-card glass-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg>
+            </div>
+            <h3>Marketing strategy</h3>
+            <p>Positioning, demand generation, and brand systems that convert in competitive markets.</p>
+            <a href="404.html" class="learn-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+          <!-- Service 4 -->
+          <article class="service-card glass-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3>Corporate training</h3>
+            <p>Leadership development, compliance programs, and skills academies at scale.</p>
+            <a href="404.html" class="learn-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+          <!-- Service 5 -->
+          <article class="service-card glass-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M7 16l4-4 4 4 6-7"/></svg>
+            </div>
+            <h3>Business analytics</h3>
+            <p>Dashboards, KPI design, and insight pipelines that inform faster decisions.</p>
+            <a href="404.html" class="learn-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+          <!-- Service 6 -->
+          <article class="service-card glass-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3>Growth solutions</h3>
+            <p>Market expansion, partnerships, and revenue acceleration playbooks.</p>
+            <a href="404.html" class="learn-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+          <!-- Service 7 (New) -->
+          <article class="service-card glass-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Digital Transformation</h3>
+            <p>Modernizing legacy systems and integrating cutting-edge AI and cloud infrastructure.</p>
+            <a href="404.html" class="learn-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+          <!-- Service 8 (New) -->
+          <article class="service-card glass-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Risk Management</h3>
+            <p>Comprehensive vulnerability assessments, compliance audits, and mitigation strategies.</p>
+            <a href="404.html" class="learn-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+          <!-- Service 9 (New) -->
+          <article class="service-card glass-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 17L12 22 22 17"/><path d="M2 12L12 17 22 12"/><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+            </div>
+            <h3>Supply Chain Optimization</h3>
+            <p>Logistics analysis, vendor consolidation, and inventory intelligence workflows.</p>
+            <a href="404.html" class="learn-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section" id="why-choose-us">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="section__kicker">Our Methodology</p>
+          <h2 class="section__title">Why leading enterprises choose Stackly</h2>
+        </header>
+        <div class="why-us-grid">
+          <div class="why-us-card animate-scroll">
+            <div class="why-us-icon">📊</div>
+            <h3>Data-Driven Insights</h3>
+            <p>We don't rely on guesswork. Every strategy we implement is backed by rigorous data analysis, ensuring your business decisions are grounded in factual market realities.</p>
+          </div>
+          <div class="why-us-card animate-scroll">
+            <div class="why-us-icon">🌐</div>
+            <h3>Global Network</h3>
+            <p>Our expansive network of industry experts spans across 40+ countries. We bring localized knowledge and global scalability to every partnership we build.</p>
+          </div>
+          <div class="why-us-card animate-scroll">
+            <div class="why-us-icon">🚀</div>
+            <h3>Proven ROI</h3>
+            <p>Our focus is strictly on the bottom line. We have a proven track record of delivering measurable returns, optimizing workflows, and dramatically accelerating growth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="section section--muted" id="case-studies">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="section__kicker">Proven Impact</p>
+          <h2 class="section__title">Recent business case studies</h2>
+        </header>
+        <div class="case-studies-grid">
+          <div class="case-study-card glass-card animate-scroll">
+            <div class="case-study__metric">
+              <strong>+45%</strong>
+              <span>Revenue Growth</span>
+            </div>
+            <h3>Enterprise Cloud Migration</h3>
+            <p>We guided a Fortune 500 logistics firm through a complete digital transformation, moving legacy systems to the cloud without a single day of downtime.</p>
+            <a href="404.html" class="learn-more">Read Case Study <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="case-study-card glass-card animate-scroll">
+            <div class="case-study__metric">
+              <strong>-30%</strong>
+              <span>Operational Costs</span>
+            </div>
+            <h3>Post-Merger Integration</h3>
+            <p>Successfully unified three distinct corporate IT infrastructures into a single, cohesive ecosystem following a massive tech sector acquisition.</p>
+            <a href="404.html" class="learn-more">Read Case Study <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about-company">
+      <div class="container about-split">
+        <div class="about-split__media animate-scroll">
+          <img src="https://picsum.photos/seed/corporate/900/675.webp" width="900" height="675" alt="Corporate" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+        </div>
+        <div class="about-split__content animate-scroll">
+          <header class="section__head">
+            <p class="section__kicker">About Stackly</p>
+            <h2 class="section__title">Driving excellence through innovation and experience</h2>
+          </header>
+          <p class="lead-text">We are a global business solution agency committed to bringing cutting-edge strategies and universal models to forward-thinking enterprises.</p>
+          <p>At Stackly Business Solutions, we specialize in empowering corporate enterprises to navigate complex market dynamics. Through strategic consulting, advanced digital transformation frameworks, and rigorous operational audits, we ensure your organization not only adapts but leads in an ever-evolving global economy.</p>
+          <ul class="feature-list">
+            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Transparent scalable pricing</li>
+            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Global reach local impact</li>
+            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Universal business models</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section class="section" id="team">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="section__kicker">Our People</p>
+          <h2 class="section__title">Meet the Stackly Leadership</h2>
+        </header>
+        <div class="team-grid">
+          <div class="team-card animate-scroll">
+            <div class="team-card__image-wrapper">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?fm=webp&fit=crop&w=300&h=300&q=80" alt="CEO" width="300" height="300" decoding="async" loading="lazy">
+            </div>
+            <h3>Marcus Vance</h3>
+            <p>Chief Executive Officer</p>
+          </div>
+          <div class="team-card animate-scroll">
+            <div class="team-card__image-wrapper">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?fm=webp&fit=crop&w=300&h=300&q=80" alt="CTO" width="300" height="300" decoding="async" loading="lazy">
+            </div>
+            <h3>Priya Sharma</h3>
+            <p>Chief Technology Officer</p>
+          </div>
+          <div class="team-card animate-scroll">
+            <div class="team-card__image-wrapper">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?fm=webp&fit=crop&w=300&h=300&q=80" alt="CFO" width="300" height="300" decoding="async" loading="lazy">
+            </div>
+            <h3>David Chen</h3>
+            <p>Head of Strategy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section section--muted" id="pricing">
+      <div class="container">
+        <div class="pricing-header animate-scroll">
+          <span class="section__kicker">Plans</span>
+          <h2 class="section__title">Engagement models that scale with you</h2>
+          <p>Compare tiers or speak with us for a tailored enterprise proposal.</p>
+        </div>
+        
+        <div class="pricing-grid">
+          <!-- Advisory Tier -->
+          <div class="pricing-card animate-scroll">
+            <h3 class="pricing-tier">Advisory</h3>
+            <div class="pricing-price">$2,400 <span>/ month</span></div>
+            <ul class="pricing-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Monthly strategy sessions</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Slack / email access</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Quarterly business review</li>
+            </ul>
+            <a href="404.html" class="btn btn--outline-pricing">Get started</a>
+          </div>
+
+          <!-- Growth Tier (Popular) -->
+          <div class="pricing-card pricing-card--popular animate-scroll" style="animation-delay: 0.1s;">
+            <div class="popular-badge">Popular</div>
+            <h3 class="pricing-tier">Growth</h3>
+            <div class="pricing-price">$5,900 <span>/ month</span></div>
+            <ul class="pricing-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Embedded lead consultant</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Cross-functional workshops</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Analytics dashboard setup</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Priority support</li>
+            </ul>
+            <a href="404.html" class="btn btn--primary">Contact sales</a>
+          </div>
+
+          <!-- Enterprise Tier -->
+          <div class="pricing-card animate-scroll" style="animation-delay: 0.2s;">
+            <h3 class="pricing-tier">Enterprise</h3>
+            <div class="pricing-price">Custom</div>
+            <ul class="pricing-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-workstream programs</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> On-site / hybrid teams</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Executive reporting pack</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> 24/7 escalation path</li>
+            </ul>
+            <a href="404.html" class="btn btn--outline-pricing">Request quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section bg-gradient">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="section__kicker" style="color: #fff;">Client Success</p>
+          <h2 class="section__title" style="color: #fff;">What our partners say</h2>
+        </header>
+        <div class="testimonials-grid">
+          <div class="testimonial-card glass-card animate-scroll">
+            <p class="testimonial-card__text">"Stackly's strategic frameworks completely transformed how we approach market expansion. Their insights directly led to a 40% increase in our Q3 revenue."</p>
+            <div class="testimonial-card__author">
+              <img src="images/sarah.webp" alt="Sarah Jenkins" width="50" height="50" decoding="async" loading="lazy">
+              <div class="author-info">
+                <h4>Sarah Jenkins</h4>
+                <p>CTO, InnovateTech</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card animate-scroll">
+            <p class="testimonial-card__text">"The organizational overhaul they facilitated was seamless. Our internal processes are now highly automated, saving us hundreds of hours each week."</p>
+            <div class="testimonial-card__author">
+              <img src="images/mike.webp" alt="Michael Chang" width="50" height="50" decoding="async" loading="lazy">
+              <div class="author-info">
+                <h4>Michael Chang</h4>
+                <p>Director of Operations, DataFlow</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card animate-scroll">
+            <p class="testimonial-card__text">"Their proprietary analytics tools gave us the clarity we needed to pivot our marketing strategy. It's rare to find consultants who execute this perfectly."</p>
+            <div class="testimonial-card__author">
+              <img src="images/elena.webp" alt="Elena Rodriguez" width="50" height="50" decoding="async" loading="lazy">
+              <div class="author-info">
+                <h4>Elena Rodriguez</h4>
+                <p>VP of HR, GlobalCorp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Insights Section -->
+    <section class="section section--muted" id="insights">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="section__kicker">Knowledge Base</p>
+          <h2 class="section__title">Latest Insights & News</h2>
+        </header>
+        <div class="insights-grid">
+          <div class="insight-card glass-card animate-scroll">
+            <img src="https://picsum.photos/seed/ai/500/300.webp" alt="AI in Business" width="500" height="300" decoding="async" loading="lazy" class="insight-card__img">
+            <div class="insight-card__content">
+              <span class="insight-card__tag">Technology</span>
+              <h3>The Future of AI in Enterprise Workflows</h3>
+              <p>How predictive models are automating supply chains and reducing overhead.</p>
+              <a href="404.html" class="learn-more">Read Article <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="insight-card glass-card animate-scroll">
+            <img src="https://picsum.photos/seed/finance/500/300.webp" alt="Global Finance" width="500" height="300" decoding="async" loading="lazy" class="insight-card__img">
+            <div class="insight-card__content">
+              <span class="insight-card__tag">Finance</span>
+              <h3>Navigating Global Market Volatility in 2026</h3>
+              <p>Strategies for maintaining liquidity during unpredictable fiscal shifts.</p>
+              <a href="404.html" class="learn-more">Read Article <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="insight-card glass-card animate-scroll">
+            <img src="https://picsum.photos/seed/hr/500/300.webp" alt="Corporate Culture" width="500" height="300" decoding="async" loading="lazy" class="insight-card__img">
+            <div class="insight-card__content">
+              <span class="insight-card__tag">Culture</span>
+              <h3>Building Resilient Teams in Remote Environments</h3>
+              <p>Proven frameworks for sustaining high performance in distributed workforces.</p>
+              <a href="404.html" class="learn-more">Read Article <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+      <div class="container cta-box glass-card text-center animate-scroll">
+        <h2>Ready to elevate your enterprise?</h2>
+        <p>Join hundreds of businesses accelerating their growth with Stackly.</p>
+        <a href="404.html" class="btn btn--primary btn--large btn--glow">Start your journey today</a>
+      </div>
+    </section>
+
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Socials -->
+        <div class="footer-col footer-col--brand">
+          <img src="images/stackly-logo-new.webp" alt="Stackly" class="footer-logo" width="140" height="auto">
+          <p class="footer-desc">Empowering enterprises worldwide through innovative strategic solutions. High-quality business consulting accessible to leadership teams anywhere.</p>
+          <div class="footer-socials">
+            <a href="404.html" aria-label="Facebook"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="404.html" aria-label="Twitter"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+            <a href="404.html" aria-label="LinkedIn"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="404.html" aria-label="Instagram"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          </div>
+        </div>
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="404.html">About Us</a></li>
+            <li><a href="404.html">Our Services</a></li>
+            <li><a href="404.html">Latest News</a></li>
+            <li><a href="404.html">Contact Support</a></li>
+          </ul>
+        </div>
+        <!-- Col 3: Categories -->
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="404.html">Strategy</a></li>
+            <li><a href="404.html">Operations</a></li>
+            <li><a href="404.html">Finance</a></li>
+            <li><a href="404.html">Technology</a></li>
+            <li><a href="404.html">Marketing</a></li>
+          </ul>
+        </div>
+        <!-- Col 4: Contact Info -->
+        <div class="footer-col footer-col--contact">
+          <h4>Contact Info</h4>
+          <ul>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>123 Business Lane, Innovation City, NY 10001</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              <span>+1 (555) 000-1234</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>support@stackly.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-bottom__left">
+          &copy; 2026 Stackly Business Solutions. All rights reserved.
+        </div>
+        <div class="footer-bottom__right">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
