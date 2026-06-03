@@ -263,7 +263,7 @@ a {
 /* Glass Cards */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
   gap: 2.5rem;
 }
 .glass-card {
@@ -327,7 +327,7 @@ a {
 }
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 2rem;
 }
 .testimonial-card {
@@ -348,7 +348,7 @@ a {
 /* Why Us Section */
 .why-us-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 3rem;
 }
 .why-us-card {
@@ -375,7 +375,7 @@ a {
 /* Case Studies */
 .case-studies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
   gap: 3rem;
 }
 .case-study-card {
@@ -410,7 +410,7 @@ a {
 /* Team Section */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
   gap: 3rem;
 }
 .team-card {
@@ -446,7 +446,7 @@ a {
 /* Insights Section */
 .insights-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
   gap: 2.5rem;
 }
 .insight-card {
@@ -593,6 +593,11 @@ a {
   color: var(--color-primary);
 }
 
+/* Utility Classes */
+.mobile-only-btn {
+  display: none !important;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
   .split-hero { grid-template-columns: 1fr; text-align: center; }
@@ -606,6 +611,9 @@ a {
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 768px) {
+  .mobile-only-btn { display: inline-block !important; }
+  html, body { overflow-x: hidden; }
+  body.nav-open { overflow: hidden; height: 100vh; touch-action: none; }
   .site-header__nav-inner { display: none; }
   .nav-toggle { display: block; background: none; border: none; cursor: pointer; position: relative; z-index: 1001; }
   .nav-toggle__bar { display: block; width: 25px; height: 3px; background: var(--color-heading); margin: 5px 0; transition: all 0.3s ease; }
@@ -624,6 +632,7 @@ a {
     z-index: 1000;
     align-items: center;
     justify-content: center;
+    overflow-y: auto;
   }
   
   .nav-toggle[aria-expanded="true"] ~ .site-header__nav-wrap .site-header__nav-inner {
@@ -723,7 +732,7 @@ a {
 
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 2rem;
   align-items: stretch;
 }
@@ -843,4 +852,3 @@ a {
     outline: none !important;
   }
 }
-
